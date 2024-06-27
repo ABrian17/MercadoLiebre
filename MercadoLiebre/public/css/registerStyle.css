@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.error {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    gap: 1.7em;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    height: 100%;
+
+}
+
+body main div{
+    width: 90%;
+    gap: 2em;
+    margin-top: 1em;
+}
+.intereses{
+    flex-wrap: wrap;
+}
+.FechaNac{
+    flex-direction: column;
+}
+input {
+    width: 100%;
+    background: none;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: 1px solid rgb(151, 141, 141);
+    border-radius: .5em;
+
+}
+.items {
+    display: flex;
+    gap: 25px;
+    width: 80%;
+    justify-content: flex-start;
+    align-items: center;   
+}
+.selecc{
+    width: 50%;
+    justify-content: right;
+}
+.seleccLabel{
+    width: 50%;
+    justify-content: left;
+}
+.ClassUser{
+    display: flex;
+    gap: 25px;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+label {
+    text-decoration: none;
+    text-transform: none;
+    font-size: 16px;
+    width: 80%;
+    margin-top: 10px;
+    padding-bottom: 15px;
+}
+
+h4 {
+    font-variant: normal;
+    font-size: 20px;
+}
