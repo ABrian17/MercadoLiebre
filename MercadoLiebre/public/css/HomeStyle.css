@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto";
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
+
+body {
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+header {
+    background-color: #EAC926;
+    text-align: center;
+    width: 100%;
+}
+
+header img {
+    width: 100%;
+}
+
+header input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+header button {
+    background-color: #ff6600;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+header button i {
+    margin-left: 5px;
+}
+
+header p {
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+.burger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #03264C;
+    color: white;
+    width: 35px;
+    height: 30px;
+    font-size: medium;
+    margin: auto;
+    border-radius: 20%;
+}
+
+.burger-menu i {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 16px;
+    display: none;
+}
+
+.precio {
+    font-size: 18px;
+}
+
+.descuento {
+    font-size: 16px;
+    color: rgb(17, 237, 17);
+}
+
+main section article i {
+    display: block;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    color: #39b54a;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer .logo {
+    font-size: 2em;
+    margin: 20px 0;
+    color: blue;
+}
+
+footer h4 {
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+footer .textof {
+    margin: 10px 0;
+    opacity: 0.8;
+    max-width: 300px;
+}
+
+footer .textcopy {
+    font-size: 0.8em;
+    color: #999;
+    margin-top: 20px;
+}
+
+article {
+    margin-bottom: 10px;
+    border: solid 1px #ebebeb;
+    padding: 15px;
+    background-color: #fff;
+    text-align: start;
+    width: 100%;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+
+@media (min-width: 361px) {
+    h3 {
+        display: contents;
+    }
+
+    nav ul {
+        display: contents;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    article {
+        box-shadow: 9px 9px 14px -5px rgba(0, 0, 0, 0.75);
+    }
+
+    nav ul {
+        display: contents;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+}
