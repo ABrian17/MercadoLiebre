@@ -6,6 +6,8 @@ const app = express();
 
 app.use(express.static("./public"));
 
+let port = 3030 || process.env.PORT 
+
 
 app.get("/", (req, res) => {
     res.sendFile(path.resolve("views/home.html"));
@@ -17,7 +19,7 @@ app.get("/register", (req, res) => {
     res.sendFile(path.resolve("views/register.html"));
 })
 
-app.listen(3030, (err) => {
+app.listen(port, (err) => {
     err ?
         console.error("se rompio todo papu")
         :
