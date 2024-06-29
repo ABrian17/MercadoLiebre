@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "nodemon /MercadoLiebre/app.js",
-    "start": "node /MercadoLiebre/app.js"
+    "test": "nodemon MercadoLiebre/app.js",
+    "start": "node MercadoLiebre/app.js"
   },
   "keywords": [],
   "author": "",
