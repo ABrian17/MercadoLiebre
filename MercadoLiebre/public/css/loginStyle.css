@@ -1,4 +1,4 @@
-.login{
+.login {
     font-family: inherit;
 }
 
@@ -9,19 +9,20 @@ main.login {
     width: 100%;
     max-width: 70vw;
 }
-body{
+
+body {
     justify-content: flex-start;
     height: 100%;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
 }
 
 form input[type="text"],
 form input[type="password"],
-form input[type="submit"]{
+form input[type="submit"] {
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
@@ -30,15 +31,16 @@ form input[type="submit"]{
 
 }
 
-.buttonEnviar input:hover{
+
+.buttonEnviar input:hover {
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #0B57D0;
     border-radius: 5px;
-    background-color:#0B57D0;
+    background-color: #0B57D0;
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
     color: white;
+    transition: all 600ms;
 }
-

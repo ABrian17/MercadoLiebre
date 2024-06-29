@@ -123,9 +123,11 @@ h2 {
     margin: 15px;
 }
 
-h3 {
+.descripcion {
     font-size: 16px;
-    display: none;
+    visibility: hidden;
+    padding-top: 30px;
+    color: gray;
 }
 
 .precio {
@@ -137,54 +139,58 @@ h3 {
     color: rgb(17, 237, 17);
 }
 
-main section article i {
-    display: block;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    color: #39b54a;
-    width: 30px;
-    height: 30px;
-    padding: 5px;
-    position: absolute;
-    right: 20px;
-    top: -15px;
 
+.DivFooter {
+    display: block;
+    background-color: white;
+    text-align: center;
+    color: #03264C;
+    width: 100vw;
+    box-shadow: 0px 0px 11px 0px rgba(130, 114, 130, 1);
 }
 
-footer {
+.DivFooter i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    transition: color 500ms;
+}
+
+.DivFooter i:hover {
+    color: #39b54a;
+}
+
+.DivFooter div p {
+    margin: 0;
+    padding: 30px;
+}
+
+.DivFooter section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    background-color: #fff;
-    padding: 20px 0;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    padding-top: 30px;
 }
 
-footer .logo {
-    font-size: 2em;
-    margin: 20px 0;
-    color: blue;
+.DivFooter section h4 {
+    font-size: 20px;
+    margin: 0px;
 }
 
-footer h4 {
-    margin: 10px 0;
+.textof {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textof p {
     font-size: 13px;
+    margin: 0px;
+    padding-bottom: 20px;
 }
 
-footer .textof {
-    margin: 10px 0;
-    opacity: 0.8;
-    max-width: 300px;
-}
-
-footer .textcopy {
-    font-size: 0.8em;
-    color: #999;
-    margin-top: 20px;
+.textof section i {
+    font-size: 2em;
+    color: #1259c3;
 }
 
 article {
@@ -221,52 +227,37 @@ article img {
     padding-top: 20px;
     padding-bottom: 10px;
 }
-footer{
-    width: 90%;
-    margin: 0 auto;
+
+.logo {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: rgb(31, 196, 31);
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 20px;
+    top: -15px;
+    transition: transform 500ms;
 }
 
-footer .contenedor-footer{
-    background-color: #fff;
-    color: #333;
-    padding: 20px 0;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
+article:hover .logo {
+    transform: rotate(-90deg);
+
 }
 
-.parrafo-final-footer {
-    text-align: center;
-    margin-top: 20px;
-}
-.parrafo-final-footer p {
-    display: inline-block;
+article:hover {
+    box-shadow: 9px 9px 14px -5px rgba(0, 0, 0, 0.75);
 }
 
-
-footer .column-1,.column-2,.column-3{
-    display: flex;
-    flex-direction: column;
+article:hover .descripcion {
+    visibility: visible;
+    transition: all 1000ms
 }
 
-footer .column-1 p,.column-2 p,.column-3 p{
-    font-size: 14px;
-}
-
-
-
-footer section i {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: blue
-}
-
-footer section i:hover {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #FFE600;
-}
 
 
 @media (min-width: 361px) {
@@ -277,17 +268,17 @@ footer section i:hover {
     nav ul {
         display: contents;
     }
-    
+
     .burger-menu {
         display: none;
     }
-    
-    
-    article{
+
+
+    article {
         justify-content: space-around;
         width: 42%;
     }
-    }
+}
 
 
 
@@ -295,40 +286,40 @@ footer section i:hover {
     nav {
         display: flex;
         margin: 30px;
-    
+
     }
-    
+
     .Menu1 {
         display: flex;
         justify-content: flex-start;
         width: 50%;
         gap: 10px;
     }
-    
+
     .Menu2 {
         display: flex;
         justify-content: flex-end;
         width: 50%;
         gap: 15px;
     }
-    
-    
+
+
     .TopLogo {
         width: 33%;
         align-content: center;
     }
-    
+
     .barraBusq {
         width: 33%;
         align-content: center;
     }
-    
+
     .DivLogo p {
         width: 33%;
         align-content: center;
     }
+
     article {
-        box-shadow: 9px 9px 14px -5px rgba(0, 0, 0, 0.75);
         width: 20%;
     }
 
@@ -344,12 +335,29 @@ footer section i:hover {
         justify-content: space-around;
         width: 20%;
     }
-    footer{
-        flex-direction: row;
-    }
-    .divFooter{
+
+    footer {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .DivFooter {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 60px;
+    }
+
+    .DivFooter section {
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+    }
+
+    .DivFooter div {
+        width: 30vw;
     }
 
 }

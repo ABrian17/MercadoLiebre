@@ -9,9 +9,6 @@ body {
     height: 100%;
 }
 
-.error {
-    display: none;
-}
 
 form {
     display: flex;
@@ -27,7 +24,8 @@ form {
     max-width: 600px;
     gap: 1.7em;
 }
-main{
+
+main {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,18 +34,21 @@ main{
 
 }
 
-body main div{
+body main div {
     width: 90%;
     gap: 2em;
     margin-top: 1em;
 }
-.intereses{
+
+.intereses {
     flex-wrap: wrap;
 }
-.FechaNac{
+
+.FechaNac {
     flex-direction: column;
 }
-input {
+
+body main input {
     width: 100%;
     background: none;
     font-size: 1rem;
@@ -56,28 +57,33 @@ input {
     border-radius: .5em;
 
 }
+
 .items {
     display: flex;
     gap: 25px;
     width: 80%;
     justify-content: flex-start;
-    align-items: center;   
+    align-items: center;
 }
-.selecc{
+
+.selecc {
     width: 50%;
     justify-content: right;
 }
-.seleccLabel{
+
+.seleccLabel {
     width: 50%;
     justify-content: left;
 }
-.ClassUser{
+
+.ClassUser {
     display: flex;
     gap: 25px;
     width: 80%;
     justify-content: center;
     align-items: center;
 }
+
 label {
     text-decoration: none;
     text-transform: none;
@@ -90,4 +96,30 @@ label {
 h4 {
     font-variant: normal;
     font-size: 20px;
+}
+
+
+.error-contraseña,
+.error-contraseña2,
+.error-domicilio,
+.error-email,
+.error-name,
+.error-Username {
+    display: none;
+    font-size: 14px;
+    color: red;
+    text-align: center;
+}
+
+input:focus:invalid+.error-name,
+input:focus:invalid+.error-Username,
+input:focus:invalid+.error-contraseña,
+input:focus:invalid+.error-contraseña2,
+input:focus:invalid+.error-email,
+input:focus:invalid+.error-domicilio {
+    display: block;
+}
+
+input:focus:invalid {
+    border: solid 1px red;
 }
